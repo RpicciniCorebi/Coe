@@ -270,17 +270,12 @@ view: nomina_2 {
     type: string
     sql:
     CASE
-      WHEN ${puesto} in ('Data Viz', 'Data Analyst', 'ATF', 'DataViz') and
-      ${rol} not in ('Analista de Gobierno', 'Consultor Gobierno')
-      THEN 'Data Viz & BI'
-      WHEN ${puesto} = 'Data Engineer' and
-      ${rol} not in ('Analista de Gobierno', 'Consultor Gobierno')
-      THEN 'Data Engineer'
-      WHEN ${puesto} = 'Data Scientist' and
-      ${rol} not in ('Analista de Gobierno', 'Consultor Gobierno')
-      THEN 'Data Scientist'
-      WHEN ${rol}  in ('Analista de Gobierno', 'Consultor Gobierno')
-      THEN 'Data  Governance'
+      WHEN ${puesto} in ('Data Viz', 'Data Analyst', 'ATF', 'DataViz')
+        THEN 'Data Viz & BI'
+      WHEN ${puesto} = 'Data Engineer'
+        THEN 'Data Engineer'
+      WHEN ${puesto} = 'Data Scientist'
+        THEN 'Data Scientist'
     END;;
   }
 
