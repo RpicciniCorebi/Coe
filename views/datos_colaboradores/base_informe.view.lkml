@@ -2,7 +2,7 @@
 view: base_informe {
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
-  sql_table_name: `datos_colaboradores.base_informe`
+  sql_table_name: `landscape-corebi.datos_colaboradores.base_informe`
     ;;
   drill_fields: [id]
   # This primary key is the unique key for this table in the underlying database.
@@ -21,6 +21,25 @@ view: base_informe {
   dimension: acuerdo_vacaciones {
     type: string
     sql: ${TABLE}.ACUERDO_VACACIONES ;;
+  }
+
+  dimension: antiguedad {
+    type: number
+    sql: ${TABLE}.ANTIGUEDAD ;;
+  }
+
+  # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
+  # measures for this dimension, but you can also add measures of many different aggregates.
+  # Click on the type parameter to see all the options in the Quick Help panel on the right.
+
+  measure: total_antiguedad {
+    type: sum
+    sql: ${antiguedad} ;;
+  }
+
+  measure: average_antiguedad {
+    type: average
+    sql: ${antiguedad} ;;
   }
 
   dimension: apellido {
@@ -71,20 +90,6 @@ view: base_informe {
   dimension: dni {
     type: number
     sql: ${TABLE}.DNI ;;
-  }
-
-  # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
-  # measures for this dimension, but you can also add measures of many different aggregates.
-  # Click on the type parameter to see all the options in the Quick Help panel on the right.
-
-  measure: total_dni {
-    type: sum
-    sql: ${dni} ;;
-  }
-
-  measure: average_dni {
-    type: average
-    sql: ${dni} ;;
   }
 
   dimension: domicilio {
@@ -249,6 +254,11 @@ view: base_informe {
     sql: ${TABLE}.SENIORITY ;;
   }
 
+  dimension: seniority_unificado {
+    type: string
+    sql: ${TABLE}.Seniority_Unificado ;;
+  }
+
   dimension: site {
     type: string
     sql: ${TABLE}.SITE ;;
@@ -282,6 +292,11 @@ view: base_informe {
   dimension: valor {
     type: number
     sql: ${TABLE}.valor ;;
+  }
+
+  dimension: vertical {
+    type: string
+    sql: ${TABLE}.Vertical ;;
   }
 
   measure: count {
