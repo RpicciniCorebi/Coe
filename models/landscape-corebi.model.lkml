@@ -25,19 +25,38 @@ persist_with: landscape_datagroup
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
-explore: base_informe {}
+explore: base_informe {
+  label: "Base Informe"
 
-explore: base_landscape_automation {
-  label: "Landscape"
-  view_label: "Base Landscape"
-  description: "Tabla que viene del formulario landscape cargada por los colaboradores al ingresar a Corebi"
+  join: cliente_colaborador {
+    view_label: "Cliente Colaborador"
+    relationship: many_to_one
+    type: left_outer
+    sql_on: ${base_informe.mail_corebi} = ${cliente_colaborador.mail_corebi} ;;
+  }
 
-join: nomina_2 {
-  view_label: "Nomina"
-  relationship: many_to_one
-  type: left_outer
-  sql_on: ${base_landscape_automation.nombre_usuario} = ${nomina_2.mail_corebi}
-  and ${nomina_2.fecha_de_baja} is null;;
+  join: cliente_tecnologia {
+    view_label: "Cliente Tecnologia"
+    relationship: many_to_one
+    type: left_outer
+    sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
+  }
+
 }
 
-}
+
+
+
+# explore: base_landscape_automation {
+#   label: "Landscape"
+#   view_label: "Base Landscape"
+#   description: "Tabla que viene del formulario landscape cargada por los colaboradores al ingresar a Corebi"
+
+# join: nomina_2 {
+#   view_label: "Nomina"
+#   relationship: many_to_one
+#   type: left_outer
+#   sql_on: ${base_landscape_automation.nombre_usuario} = ${nomina_2.mail_corebi}
+#   and ${nomina_2.fecha_de_baja} is null;;
+# }
+# }
