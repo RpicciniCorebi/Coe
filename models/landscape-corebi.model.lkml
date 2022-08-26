@@ -27,13 +27,11 @@ persist_with: landscape_datagroup
 
 explore: base_informe {
   label: "Base Informe"
+}
 
-  join: cliente_colaborador {
-    view_label: "Cliente Colaborador"
-    relationship: many_to_one
-    type: left_outer
-    sql_on: ${base_informe.mail_corebi} = ${cliente_colaborador.mail_corebi} ;;
-  }
+
+explore: cliente_colaborador {
+    label: "Cliente Colaborador"
 
   join: cliente_tecnologia {
     view_label: "Cliente Tecnologia"
@@ -42,7 +40,8 @@ explore: base_informe {
     sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
   }
 
-}
+  }
+
 
 
 
