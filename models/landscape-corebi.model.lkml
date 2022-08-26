@@ -33,14 +33,13 @@ explore: base_informe {
 explore: cliente_colaborador {
     label: "Cliente Colaborador"
 
-  join: cliente_tecnologia {
-    view_label: "Cliente Tecnologia"
-    relationship: many_to_one
-    type: left_outer
-    sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
   }
 
+
+explore: cliente_tecnologia {
+    label: "Cliente Tecnologia"
   }
+
 
 
 
