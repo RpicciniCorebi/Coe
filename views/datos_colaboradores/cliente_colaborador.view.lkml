@@ -18,6 +18,7 @@ view: cliente_colaborador {
 
   dimension: mail_corebi {
     type: string
+    primary_key:  yes
     sql: ${TABLE}.mail_corebi ;;
   }
 
