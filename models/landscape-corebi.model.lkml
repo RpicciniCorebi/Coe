@@ -34,6 +34,14 @@ persist_with: landscape_datagroup
     type: left_outer
     sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
   }
+
+  join: base_informe {
+    view_label: "Base Informe"
+    relationship: many_to_one
+    type: left_outer
+    sql_on: ${cliente_colaborador.mail_corebi} = ${base_informe.nombre_usuario} ;;
+  }
+
 }
 
 
