@@ -13,6 +13,7 @@ view: cliente_tecnologia {
 
   dimension: cliente {
     type: string
+    primary_key: yes
     sql: ${TABLE}.cliente ;;
   }
 
