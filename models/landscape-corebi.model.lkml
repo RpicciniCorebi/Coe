@@ -25,6 +25,19 @@ persist_with: landscape_datagroup
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
+  explore: cliente_tecnologia {
+    label: "Cliente Tecnologia"
+
+  join: cliente_colaborador {
+    view_label: "Cliente Colaborador"
+    relationship: many_to_one
+    type: left_outer
+    sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
+  }
+}
+
+
+
 explore: base_informe {
   label: "Base Informe"
 
@@ -48,11 +61,6 @@ join: cliente_tecnologia {
 explore: cliente_colaborador {
     label: "Cliente Colaborador"
 
-  }
-
-
-explore: cliente_tecnologia {
-    label: "Cliente Tecnologia"
   }
 
 
