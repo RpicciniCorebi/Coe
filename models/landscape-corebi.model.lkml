@@ -32,7 +32,7 @@ persist_with: landscape_datagroup
     view_label: "Cliente Colaborador"
     relationship: many_to_one
     type: left_outer
-    sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
+    sql_on: ${cliente_tecnologia.cliente} = ${cliente_colaborador.cliente} ;;
   }
 
   join: base_informe {
