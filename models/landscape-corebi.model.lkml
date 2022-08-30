@@ -26,17 +26,17 @@ persist_with: landscape_datagroup
 # Each joined view also needs to define a primary key.
 
   explore: cliente_tecnologia {
-    label: "Cliente Tecnologia"
+    label: "1 - Cliente Tecnologia"
 
   join: cliente_colaborador {
-    view_label: "Cliente Colaborador"
+    view_label: "2 - Cliente Colaborador"
     relationship: many_to_one
     type: left_outer
     sql_on: ${cliente_tecnologia.cliente} = ${cliente_colaborador.cliente} ;;
   }
 
   join: base_informe {
-    view_label: "Base Informe"
+    view_label: "3 - Base Informe"
     relationship: many_to_one
     type: left_outer
     sql_on: ${cliente_colaborador.mail_corebi} = ${base_informe.nombre_usuario} ;;
