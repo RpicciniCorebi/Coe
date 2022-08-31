@@ -301,11 +301,12 @@ view: base_informe {
 
   measure: count {
     type: count
-    drill_fields: [id]
+    drill_fields: [nombre_apellido, seniority_unificado, l__der]
   }
 
   measure: cant_colab_int_exp {
     type: count_distinct
+    drill_fields: [nombre_apellido, seniority_unificado, l__der]
     sql: if(${valor} > 2, ${nombre_usuario}, null) ;;
   }
 
