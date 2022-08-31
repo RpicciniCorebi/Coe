@@ -306,7 +306,7 @@ view: base_informe {
 
   measure: cant_colab_int_exp {
     type: count_distinct
-    sql: if(${valor} > 2, ${nombre_usuario}) ;;
+    sql: if(${valor} > 2, ${nombre_usuario}, null) ;;
   }
 
 }
