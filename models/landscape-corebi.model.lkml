@@ -42,10 +42,7 @@ persist_with: landscape_datagroup
     type: left_outer
     sql_on: ${cliente_colaborador.mail_corebi} = ${base_informe.nombre_usuario} ;;
   }
-
 }
-
-
 
 explore: base_informe {
   label: "Base Informe"
