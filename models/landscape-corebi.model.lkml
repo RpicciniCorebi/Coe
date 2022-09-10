@@ -63,17 +63,12 @@ explore: base_informe {
 #  type: left_outer
 #  sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
 #}
-
 }
-
 
 explore: cliente_colaborador {
     label: "Cliente Colaborador"
 
   }
-
-
-
 
 # explore: base_landscape_automation {
 #   label: "Landscape"
