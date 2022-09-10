@@ -50,19 +50,19 @@ persist_with: landscape_datagroup
 explore: base_informe {
   label: "Base Informe"
 
-join: cliente_colaborador {
-  view_label: "Cliente Colaborador"
-  relationship: many_to_one
-  type: left_outer
-  sql_on: ${base_informe.nombre_usuario} = ${cliente_colaborador.mail_corebi} ;;
-}
+#join: cliente_colaborador {
+#  view_label: "Cliente Colaborador"
+#  relationship: many_to_one
+#  type: left_outer
+#  sql_on: ${base_informe.nombre_usuario} = ${cliente_colaborador.mail_corebi} ;;
+#}
 
-join: cliente_tecnologia {
-  view_label: "Cliente Tecnología"
-  relationship: many_to_one
-  type: left_outer
-  sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
-}
+#join: cliente_tecnologia {
+#  view_label: "Cliente Tecnología"
+#  relationship: many_to_one
+#  type: left_outer
+#  sql_on: ${cliente_colaborador.cliente} = ${cliente_tecnologia.cliente} ;;
+#}
 
 }
 
