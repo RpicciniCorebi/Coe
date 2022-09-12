@@ -67,6 +67,13 @@ explore: cliente_colaborador {
 
   }
 
+
+explore: nomina {
+  label: "Nomina"
+
+}
+
+
 # explore: base_landscape_automation {
 #   label: "Landscape"
 #   view_label: "Base Landscape"

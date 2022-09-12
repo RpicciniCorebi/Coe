@@ -1,8 +1,8 @@
 # The name of this view in Looker is "Nomina 2"
-view: nomina_2 {
+view: nomina {
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
-  sql_table_name: `datos_colaboradores.Nomina_2`
+  sql_table_name: `datos_colaboradores.Nomina`
     ;;
   # No primary key is defined for this view. In order to join this view in an Explore,
   # define primary_key: yes on a dimension that has no repeated values.
