@@ -68,7 +68,7 @@ explore: cliente_colaborador {
   }
 
 
-explore: nomina {
+explore: nomina_completa {
   label: "Nomina"
 
 }
