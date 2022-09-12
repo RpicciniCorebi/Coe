@@ -229,4 +229,13 @@ view: nomina_completa {
     type: count
     drill_fields: []
   }
+  measure: Cant_Colab {
+    label: "Cantidad de Colaboradores"
+    type: count_distinct
+    sql:  ${mail_corebi} ;;
+
+    drill_fields: []
+  }
+
+
 }
