@@ -271,6 +271,7 @@ view: nomina {
     sql:
     CASE
       WHEN ${puesto} in ('Data Viz', 'Data Analyst', 'ATF', 'DataViz', 'TBA', 'TBA ', 'TBD', 'Consultor BI')
+       and ${rol} not in ('Analista de Gobierno ', 'TBA Datastage', 'Analista de Gobierno')
         THEN 'Data Viz & BI'
       WHEN ${puesto} in ('Data Engineer', 'Ingeniero de datos')
         THEN 'Data Engineer'
