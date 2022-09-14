@@ -277,7 +277,7 @@ view: nomina {
         THEN 'Data Engineer'
       WHEN ${puesto} = 'Data Scientist'
         THEN 'Data Scientist'
-      WHEN ${puesto} in ('Data Governance', 'Consultor Gobierno')
+      WHEN ${rol} in ('Analista de Gobierno', 'Analista de Gobierno ', 'Consultor Gobierno')
         THEN 'Data Governance'
     END;;
   }
