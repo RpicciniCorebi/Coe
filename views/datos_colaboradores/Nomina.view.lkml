@@ -270,13 +270,22 @@ view: nomina {
     type: string
     sql:
     CASE
-      WHEN ${puesto} in ('Data Viz', 'Data Analyst', 'ATF', 'DataViz')
+      WHEN ${puesto} in ('Data Viz', 'Data Analyst', 'ATF', 'DataViz', 'TBA', 'TBA ', 'TBD', 'Consultor BI')
         THEN 'Data Viz & BI'
-      WHEN ${puesto} = 'Data Engineer'
+      WHEN ${puesto} in ('Data Engineer', 'Ingeniero de datos')
         THEN 'Data Engineer'
       WHEN ${puesto} = 'Data Scientist'
         THEN 'Data Scientist'
+      WHEN ${puesto} in ('Data Governance', 'Consultor Gobierno')
+        THEN 'Data Governance'
     END;;
+  }
+
+  measure: Cant_Colab {
+    label: "Cantidad de Colaboradores"
+    type: count_distinct
+    sql: ${mail_corebi} ;;
+    drill_fields: []
   }
 
   measure: count {
