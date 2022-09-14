@@ -274,8 +274,10 @@ view: nomina {
        and ${rol} not in ('Analista de Gobierno ', 'TBA Datastage', 'Analista de Gobierno')
         THEN 'Data Viz & BI'
       WHEN ${puesto} in ('Data Engineer', 'Ingeniero de datos')
+      and ${rol} not in ('Analista de Gobierno ', 'TBA Datastage', 'Analista de Gobierno')
         THEN 'Data Engineer'
       WHEN ${puesto} = 'Data Scientist'
+      and ${rol} not in ('Analista de Gobierno ', 'TBA Datastage', 'Analista de Gobierno')
         THEN 'Data Scientist'
       WHEN ${rol} in ('Analista de Gobierno', 'Analista de Gobierno ', 'Consultor Gobierno')
         THEN 'Data Governance'
