@@ -1,3 +1,8 @@
+access_grant: can_view_coe {
+  user_attribute: departamento
+  allowed_values: ["coe"]
+}
+
 # Define the database connection to be used for this model.
 connection: "landscape-corebi"
 
