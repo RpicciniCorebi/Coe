@@ -1,3 +1,9 @@
+access_grant: acceso_coe_rrhh {
+  allowed_values: ["coe"]
+  user_attribute: departamento
+}
+
+
 # Define the database connection to be used for this model.
 connection: "landscape-corebi"
 
