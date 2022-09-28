@@ -3,6 +3,7 @@ access_grant: can_view_coe {
   allowed_values: ["coe"]
 }
 
+
 # Define the database connection to be used for this model.
 connection: "landscape-corebi"
 
@@ -18,6 +19,8 @@ datagroup: landscape_datagroup {
 }
 
 persist_with: landscape_datagroup
+
+
 
 # Explores allow you to join together different views (database tables) based on the
 # relationships between fields. By joining a view into an Explore, you make those
