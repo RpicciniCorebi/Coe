@@ -1,3 +1,4 @@
+
 access_grant: can_view_coe {
   user_attribute: departamento
   allowed_values: ["coe"]
