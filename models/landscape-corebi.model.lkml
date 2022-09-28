@@ -32,7 +32,7 @@ persist_with: landscape_datagroup
 # Each joined view also needs to define a primary key.
 
   explore: cliente_tecnologia {
-    required_access_grants: [acceso_coe_rrhh]
+#    required_access_grants: [acceso_coe_rrhh]
     label: "Cliente Tecnologia"
     view_label: "1 - Cliente Tecnología"
 
@@ -52,7 +52,7 @@ persist_with: landscape_datagroup
 }
 
 explore: base_informe {
-  required_access_grants: [acceso_coe_rrhh]
+#  required_access_grants: [acceso_coe_rrhh]
   label: "Base Informe"
 
 #join: cliente_colaborador {
@@ -71,7 +71,7 @@ explore: base_informe {
 }
 
 explore: cliente_colaborador {
-  required_access_grants: [acceso_coe_rrhh]
+#  required_access_grants: [acceso_coe_rrhh]
   label: "Cliente Colaborador"
 
   }
