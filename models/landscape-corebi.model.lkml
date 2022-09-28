@@ -78,7 +78,7 @@ explore: cliente_colaborador {
 
 
 explore: nomina {
-  required_access_grants: [acceso_coe_rrhh]
+#  required_access_grants: [acceso_coe_rrhh]
   label: "Nomina"
 
 }
