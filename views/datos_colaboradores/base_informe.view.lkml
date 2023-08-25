@@ -163,7 +163,19 @@ view: base_informe {
   dimension: herramienta {
     type: string
     sql: ${TABLE}.herramienta ;;
+    link: {
+      label: "My Link"
+      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?{{ value }}"
+    }
   }
+#  dimension: herramienta2 {
+#      type: string
+#      sql: ${TABLE}.herramienta ;;
+#      link: {
+#        label: "Herramientas"
+#        url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?{{ _filters['base_informe.herramienta']}"
+#      }
+#    }
 
   dimension: hijo_s {
     type: number
