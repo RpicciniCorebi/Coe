@@ -10,7 +10,6 @@ include: "/views/**/*.view" # include all the views
 # # Select the views that should be a part of this model,
 # # and define the joins that connect them together.
 #
-# explore: order_items {
 #   join: orders {
 #     relationship: many_to_one
 #     sql_on: ${orders.id} = ${order_items.order_id} ;;
@@ -21,3 +20,4 @@ include: "/views/**/*.view" # include all the views
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
+explore: base_informe {}
