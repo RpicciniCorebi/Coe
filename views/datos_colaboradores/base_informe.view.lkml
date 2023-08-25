@@ -15,11 +15,24 @@ view: base_informe {
   }
 
 
-  dimension: button {
-#    sql: 'Button'
+  dimension: button3 {
+    label: "_filters['base_informe.Herramienta']"
+  }
+
+
+  dimension: button2 {
     link: {
       label: "My Link"
-      url: "/look/<51>?f[Herramienta.Herramienta]=_filters['base_informe.Herramienta']"
+      url: "/look/<51>?_filters['base_informe.Herramienta']"
+    }
+  }
+
+
+  dimension: button {
+    sql: 'Button'
+    link: {
+      label: "My Link"
+      url: "/look/<51>?_filters['base_informe.Herramienta']"
     }
   }
 
