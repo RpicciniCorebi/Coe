@@ -14,6 +14,16 @@ view: base_informe {
     sql: ${TABLE}.ID ;;
   }
 
+
+  dimension: button {
+    sql: 'Button'
+    link: {
+      label: "My Link"
+      url: "/look/<51>?f[Herramienta.Herramienta]=_filters['base_informe.Herramienta']"
+    }
+  }
+
+
   # Here's what a typical dimension looks like in LookML.
   # A dimension is a groupable field that can be used to filter query results.
   # This dimension will be called "Acuerdo Vacaciones" in Explore.
