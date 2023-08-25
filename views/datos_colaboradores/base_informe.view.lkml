@@ -16,7 +16,7 @@ view: base_informe {
 
 
   dimension: button {
-    sql: 'Button'
+#    sql: 'Button'
     link: {
       label: "My Link"
       url: "/look/<51>?f[Herramienta.Herramienta]=_filters['base_informe.Herramienta']"
