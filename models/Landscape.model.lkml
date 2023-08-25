@@ -1,6 +1,7 @@
 connection: "landscape-corebi"
 label: " Landscape"
 include: "/views/**/*.view" # include all the views
+include: "/dashboard/*.dashboard"
 
 ############ Model Configuration #############
 
