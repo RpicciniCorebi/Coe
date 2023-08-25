@@ -20,10 +20,10 @@ view: base_informe {
   }
 
 
-  dimension: button2 {
+  dimension: name {
     link: {
       label: "My Link"
-      url: "/look/<51>?_filters['base_informe.Herramienta']"
+      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?_filters['base_informe.Herramienta']"
     }
   }
 
@@ -32,7 +32,7 @@ view: base_informe {
     sql: 'Button'
     link: {
       label: "My Link"
-      url: "/look/<51>?_filters['base_informe.Herramienta']"
+      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?_filters['base_informe.Herramienta']"
     }
   }
 
