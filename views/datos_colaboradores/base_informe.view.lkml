@@ -14,6 +14,11 @@ view: base_informe {
     sql: ${TABLE}.ID ;;
   }
 
+  dimension: prueba_boton  {
+    html: <img src="https://www.brettcase.com/
+    product_images/{{ value }}.jpg"/> ;;
+  }
+
 
   dimension: button3 {
     label: "_filters['base_informe.Herramienta']"
