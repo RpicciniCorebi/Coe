@@ -34,7 +34,7 @@ view: base_informe {
 
 
   dimension: button {
-    sql: "Boton";;
+    sql: "Subir Archivo";;
     link: {
       label: "My Link"
       url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta'] }}"
