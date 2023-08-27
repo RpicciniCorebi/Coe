@@ -37,7 +37,7 @@ view: base_informe {
     sql: "Boton";;
     link: {
       label: "My Link"
-      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?_filters['base_informe.Herramienta']"
+      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta'] }}"
     }
   }
 
