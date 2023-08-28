@@ -27,7 +27,7 @@ view: base_informe {
 
   dimension: name_button {
     sql: "Clarin" ;;
-    html: <a href="https://www.clarin.com"><button>Ir a Ejemplo.com</button></a> ;;
+    html: <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}"><button>Subir Archivo</button></a> ;;
 #    link: {
 #      label: "My Link"
 #      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta']}}"
