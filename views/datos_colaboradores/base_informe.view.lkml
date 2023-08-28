@@ -202,7 +202,7 @@ view: base_informe {
     sql: ${TABLE}.herramienta ;;
     link: {
       label: "My Link"
-      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta'] }}"
+      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?base_informe.herramienta={{ _filters['base_informe.herramienta'] }}"
     }
   }
 #  dimension: herramienta2 {
