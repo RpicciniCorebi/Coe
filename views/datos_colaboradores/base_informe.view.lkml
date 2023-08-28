@@ -26,12 +26,10 @@ view: base_informe {
 
 
   dimension: name_button {
-    sql: "Clarin" ;;
+    sql: "Subir Archivo" ;;
     html:
-    <html lang="es">
+    <html>
     <head>
-    <meta charset="UTF-8">
-    <title>Botón con Cambio de Fuente y Estilo</title>
     <style>
       #botonPersonalizado {
         font-family: Arial, sans-serif;
