@@ -69,7 +69,7 @@ view: base_informe {
     sql: "Subir Archivo";;
     link: {
       label: "Confirmar envío"
-      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}"
+      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&base_informe.herramienta={{ _filters['base_informe.herramienta']}}"
     }
   }
 
@@ -200,10 +200,6 @@ view: base_informe {
   dimension: herramienta {
     type: string
     sql: ${TABLE}.herramienta ;;
-    link: {
-      label: "My Link"
-      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?base_informe.herramienta={{ _filters['base_informe.herramienta'] }}"
-    }
   }
 #  dimension: herramienta2 {
 #      type: string
