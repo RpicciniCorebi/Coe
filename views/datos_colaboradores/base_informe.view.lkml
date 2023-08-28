@@ -54,7 +54,7 @@ view: base_informe {
     </script>
     </head>
     <body>
-        <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}" target="_blank"><button id="botonPersonalizado" onclick="cambiarEstilo()">Ir a Clarín</button></a>
+        <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}" target="_blank"><button id="botonPersonalizado" onclick="cambiarEstilo()">Enviar Archivo..</button></a>
     </body>
     </html> ;;
 
