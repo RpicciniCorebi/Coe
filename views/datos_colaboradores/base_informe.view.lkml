@@ -26,10 +26,22 @@ view: base_informe {
 
 
   dimension: name_button {
-    link: {
-      label: "My Link"
-      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta']}}"
-    }
+    sql: "Subir Otro Archivo" ;;
+    html:
+      <html lang="es">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Botón con Redirección</title>
+      </head>
+      <body>
+          <button onclick="window.location.href='https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta']}}'">Ir a Ejemplo.com</button>
+      </body>
+      </html>;;
+#    link: {
+#      label: "My Link"
+#      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta']}}"
+#    }
   }
 
 
