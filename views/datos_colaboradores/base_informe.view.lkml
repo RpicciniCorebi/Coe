@@ -28,7 +28,7 @@ view: base_informe {
   dimension: name_button {
     link: {
       label: "My Link"
-      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?_filters['base_informe.Herramienta']"
+      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta']}}"
     }
   }
 
@@ -36,8 +36,8 @@ view: base_informe {
   dimension: button {
     sql: "Subir Archivo";;
     link: {
-      label: "My Link"
-      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta'] }}"
+      label: "Confirmar envío"
+      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}"
     }
   }
 
