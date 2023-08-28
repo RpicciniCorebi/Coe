@@ -27,7 +27,39 @@ view: base_informe {
 
   dimension: name_button {
     sql: "Clarin" ;;
-    html: <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}"><button>Subir Archivo</button></a> ;;
+    html:
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Botón con Cambio de Fuente y Estilo</title>
+    <style>
+      #botonPersonalizado {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function cambiarEstilo() {
+        var boton = document.getElementById("botonPersonalizado");
+        boton.style.fontFamily = "Times New Roman, serif";
+        boton.style.fontSize = "20px";
+        boton.style.backgroundColor = "#ff9900";
+        boton.style.color = "#000";
+      }
+    </script>
+    </head>
+    <body>
+        <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}" target="_blank"><button id="botonPersonalizado" onclick="cambiarEstilo()">Ir a Clarín</button></a>
+    </body>
+    </html> ;;
+
+
+#    <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}"><button>Subir Archivo</button></a> ;;
 #    link: {
 #      label: "My Link"
 #      url: "https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Herramienta={{ _filters['base_informe.herramienta']}}"
