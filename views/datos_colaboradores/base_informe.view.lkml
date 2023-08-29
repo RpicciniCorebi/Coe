@@ -28,35 +28,7 @@ view: base_informe {
   dimension: name_button {
     sql: "Subir Archivo" ;;
     html:
-    <html>
-    <head>
-    <style>
-      #botonPersonalizado {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-      }
-    </style>
-    <script>
-      function cambiarEstilo() {
-        var boton = document.getElementById("botonPersonalizado");
-        boton.style.fontFamily = "Times New Roman, serif";
-        boton.style.fontSize = "20px";
-        boton.style.backgroundColor = "#FF8000";
-        boton.style.color = "#000";
-      }
-    </script>
-    </head>
-    <body>
-        <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&base_informe.herramienta={{ _filters['base_informe.herramienta']}}" target="_blank"><button id="botonPersonalizado" onclick="cambiarEstilo()">Enviar Archivo..</button></a>
-    </body>
-    </html> ;;
-
-
+        <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&base_informe.herramienta={{ _filters['base_informe.herramienta']}}">Enviar Archivo..</button></a> ;;
 #    <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}"><button>Subir Archivo</button></a> ;;
 #    link: {
 #      label: "My Link"
