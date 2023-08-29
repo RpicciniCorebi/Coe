@@ -28,7 +28,7 @@ view: base_informe {
   dimension: name_button {
     sql: "Subir Archivo" ;;
     html:
-        <button style="background-color:red; background-border:red">
+        <button style="background:red; border:red">
         <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&base_informe.herramienta={{ _filters['base_informe.herramienta']}}">Enviar Archivo..</a>
         </button> ;;
 #    <a href="https://us-central1-coe-academy-gcp.cloudfunctions.net/a_download_looker_gv?Id=53&Herramienta={{ _filters['base_informe.herramienta']}}"><button>Subir Archivo</button></a> ;;
