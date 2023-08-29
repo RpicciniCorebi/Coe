@@ -46,7 +46,7 @@ view: base_informe {
         var boton = document.getElementById("botonPersonalizado");
         boton.style.fontFamily = "Times New Roman, serif";
         boton.style.fontSize = "20px";
-        boton.style.backgroundColor = "#ff9900";
+        boton.style.backgroundColor = "#FF8000";
         boton.style.color = "#000";
       }
     </script>
