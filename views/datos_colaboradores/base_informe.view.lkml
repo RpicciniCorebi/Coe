@@ -346,6 +346,12 @@ view: base_informe {
     drill_fields: [nombre_apellido, seniority_unificado, l__der]
   }
 
+  measure: count_distinct {
+    label:"Cantidad de colabores"
+    type: count_distinct
+    sql: ${mail_corebi} ;;
+  }
+
   measure: cant_colab_int_exp {
     type: count_distinct
     drill_fields: [nombre_apellido, seniority_unificado, l__der]

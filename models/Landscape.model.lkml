@@ -1,5 +1,5 @@
 connection: "landscape-corebi"
-label: " Landscape"
+label: " landscape-corebi"
 include: "/views/**/*.view" # include all the views
 include: "/dashboard/*.dashboard"
 
