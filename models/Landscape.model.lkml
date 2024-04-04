@@ -22,3 +22,5 @@ include: "/dashboard/*.dashboard"
 #   }
 # }
 explore: base_informe {}
+
+explore: nomina_completa {}
