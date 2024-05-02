@@ -23,4 +23,11 @@ include: "/dashboard/*.dashboard"
 # }
 explore: base_informe {}
 
-explore: nomina_completa {}
+explore: nomina_completa {
+
+  join: usuarios_con_respuesta {
+    relationship: many_to_one
+    type: left_outer
+    sql_on: ${nomina_completa.mail_corebi} = ${usuarios_con_respuesta.nombre_usuario} ;;
+  }
+}
