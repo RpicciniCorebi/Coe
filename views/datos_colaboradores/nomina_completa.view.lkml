@@ -175,6 +175,12 @@ view: nomina_completa {
     sql: ${TABLE}.NOMBRE ;;
   }
 
+  dimension: nombre_completo {
+    label: "Nombre Completo"
+    type: string
+    sql: concat(${apellido}, " ", ${nombre}) ;;
+  }
+
   dimension: obra_social_cobertura {
     type: string
     sql: ${TABLE}.OBRA_SOCIAL_COBERTURA ;;

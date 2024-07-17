@@ -21,7 +21,13 @@ include: "/dashboard/*.dashboard"
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
-explore: base_informe {}
+explore: base_informe {
+  join: nomina_completa {
+    relationship: many_to_one
+    type: left_outer
+    sql_on: ${base_informe.mail_corebi} = ${nomina_completa.mail_corebi} ;;
+  }
+}
 
 explore: nomina_completa {
 
