@@ -194,16 +194,19 @@ view: nomina_completa {
   dimension: puesto {
     type: string
     sql: ${TABLE}.PUESTO ;;
+    drill_fields: [nombre_completo, mail_corebi]
   }
 
   dimension: rol {
     type: string
     sql: ${TABLE}.ROL ;;
+    drill_fields: [nombre_completo, mail_corebi]
   }
 
   dimension: seniority {
     type: string
     sql: ${TABLE}.SENIORITY ;;
+    drill_fields: [nombre_completo, mail_corebi]
   }
 
   dimension: site {
