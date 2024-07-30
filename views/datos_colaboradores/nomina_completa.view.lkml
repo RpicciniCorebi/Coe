@@ -240,7 +240,7 @@ view: nomina_completa {
     type: count_distinct
     sql:  ${mail_corebi} ;;
 
-    drill_fields: []
+    drill_fields: [nombre_completo, mail_corebi]
   }
 
 

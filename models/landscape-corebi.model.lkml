@@ -3,6 +3,13 @@ label: " landscape-corebi"
 include: "/views/**/*.view" # include all the views
 include: "/dashboard/*.dashboard"
 
+
+datagroup: modelo_academia_default_datagroup {
+# sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "1 hour"
+}
+
+
 ############ Model Configuration #############
 
 # include: "/**/*.view.lkml"                 # include all views in this project
