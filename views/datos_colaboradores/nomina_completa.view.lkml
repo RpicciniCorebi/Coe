@@ -131,6 +131,7 @@ view: nomina_completa {
   }
 
   dimension: l__der {
+    label: "Lider"
     type: string
     sql: ${TABLE}.L__DER ;;
   }
