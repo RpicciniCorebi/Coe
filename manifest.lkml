@@ -5,7 +5,9 @@ application: looker_ca_api {
   label: "Conversational"
   url: "http://localhost:8501"
   mount_points: {
-    standalone: no
+      dashboard_vis: yes
+      dashboard_tile: yes
+      standalone: yes
   }
   entitlements: {
     local_storage: no
