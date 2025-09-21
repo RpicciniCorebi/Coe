@@ -8,6 +8,20 @@ view: base_informe {
   # This primary key is the unique key for this table in the underlying database.
   # You need to define a primary key in a view in order to join to other views.
 
+  dimension: agente_iframe {
+    label: "Agente Vertex AI (iframe)"
+    type: string
+    sql: "Agente Vertex AI" ;;
+    html:
+    <iframe
+    src="https://vertexaisearch.cloud.google.com/home/cid/3cd3dab5-4f95-4c90-8b76-d89187f1610e"
+    width="400"
+    height="300"
+    style="border:none; border-radius:8px;"
+    </iframe>
+  }
+
+
   dimension: id {
     primary_key: yes
     type: string
