@@ -235,6 +235,21 @@ view: nomina_completa {
     sql: ${TABLE}.TIPOEMPLEADO ;;
   }
 
+  dimension: recurso_clave {
+    type: string
+    sql: ${TABLE}.RECURSO_CLAVE ;;
+  }
+
+  dimension: cliente {
+    type: string
+    sql: ${TABLE}.CLIENTE ;;
+  }
+
+  dimension: tecnologia_principal {
+    type: string
+    sql: ${TABLE}.TECNOLOGIA_PRINCIPAL ;;
+  }
+
   measure: count {
     type: count
     drill_fields: []

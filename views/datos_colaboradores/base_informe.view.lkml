@@ -355,6 +355,16 @@ view: base_informe {
     sql: ${TABLE}.Vertical ;;
   }
 
+  dimension: recurso_clave {
+    type: string
+    sql: ${TABLE}.RECURSO_CLAVE ;;
+  }
+
+  dimension: tecnologia_principal {
+    type: string
+    sql: ${TABLE}.TECNOLOGIA_PRINCIPAL ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [nombre_apellido, seniority_unificado, l__der]

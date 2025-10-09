@@ -225,6 +225,7 @@ view: nomina_3 {
     sql: ${TABLE}.TIPOEMPLEADO ;;
   }
 
+
   measure: count {
     type: count
     drill_fields: []
